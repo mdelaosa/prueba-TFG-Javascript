@@ -1,1 +1,13 @@
-prueba{}
+body{
+    border: none;
+    background-color: #448e97fb;
+  }
+#base{
+    border: solid 1px black;
+    background-color: #cae6ff;
+    width: 600px;
+    height: 850px;
+    margin: auto;
+    padding: 20px;
+}
+
