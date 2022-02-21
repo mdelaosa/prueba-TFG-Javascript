@@ -11,3 +11,12 @@ body{
     padding: 20px;
 }
 
+th{
+  width: 120px;
+  height: 800px;
+  border: solid 1px black;
+}
+
+#canales_id{
+  width: 240px;
+}
