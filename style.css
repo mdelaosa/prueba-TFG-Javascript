@@ -1,8 +1,12 @@
 body{
     border: none;
     background-color: #448e97fb;
-  }
+}
+
 #base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 1px black;
     background-color: #cae6ff;
     width: 600px;
