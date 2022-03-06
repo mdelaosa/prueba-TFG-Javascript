@@ -16,50 +16,49 @@ body{
 }
 
 th{
-  width: 120px;
   height: 800px;
   border: solid 1px black;
   text-align:center;
 }
 
-#canales_id{
-  width: 275px;
-}
-
 td{
-  text-align:center;
+  text-align: center;
+  width: 60px;
 }
 
-#canal_1{
+#canal_1, #canal_2, #canal_3, #canal_4{
   margin: auto;
-  text-align:center;
+  text-align: center;
+  width: 60px;
+}
+
+#canales_id{
+  margin: auto;
+  text-align: center;
+  width: 120px;
 }
 
 .load, .pfl, .mute, .main{
   padding: auto;
-  width: 60px;
   height: 25px;
   border: solid 1px black;
 }
 
 .gain, .aux{
   padding: auto;
-  width: 400px;
-  height: 80px;
+  height: 70px;
   border-radius: 75px;
   border: solid 1px black;
 }
 
 .slider{
-  width: 120px;
   height: 300px;
   border: solid 1px black;
 }
 
-#slider_ch1{
+#slider_ch1, #slider_ch2, #slider_ch3, #slider_ch4, #slider_left, #slider_right{
   transform: rotate(-90deg);
-  display:flex;
-  text-indent: 2em;
+  display:flex; 
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
