@@ -9,7 +9,7 @@ body{
     justify-content: center;
     border: solid 1px black;
     background-color: #cae6ff;
-    width: 600px;
+    width:900px;
     height: 850px;
     margin: auto;
     padding: 20px;
@@ -44,15 +44,22 @@ td{
   border: solid 1px black;
 }
 
+.btn_all{
+  height: 25px;
+  width: 25px;
+  border: solid 1px black;
+}
+
 .gain, .aux{
   padding: auto;
-  height: 70px;
+  height: 60px;
   border-radius: 75px;
   border: solid 1px black;
 }
 
 .slider{
   height: 300px;
+  width: 25px;
   border: solid 1px black;
 }
 
