@@ -12,7 +12,7 @@
             <table class="default" border="1">
                 <tr>
                     <th id="canal_1">
-                        <table>
+                        <table align="center">
                                 <tr><td class="load" id="load_ch1">load</td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">GAIN</td></tr>
@@ -30,6 +30,8 @@
                                 <tr><td></td></tr>
                                 <tr><td class="main" id="main_ch1">main</td></tr>
                                 <tr><td></td></tr>
+                            </table>
+                            <table>
                                 <tr><td id="title">CH 1</td></tr>
                                 <tr>
                                     <td class="slider">
@@ -59,6 +61,8 @@
                             <tr><td></td></tr>
                             <tr><td class="main" id="main_ch2">main</td></tr>
                             <tr><td></td></tr>
+                        </table>
+                        <table>
                             <tr><td id="title">CH 2</td></tr>
                             <tr>
                                 <td class="slider">
@@ -86,6 +90,8 @@
                             <tr><td></td></tr>
                             <tr><td class="main" id="main_ch3">main</td></tr>
                             <tr><td></td></tr>
+                        </table>
+                        <table>
                             <tr><td id="title">CH 3</td></tr>
                             <tr>
                                 <td class="slider">
@@ -113,6 +119,8 @@
                             <tr><td></td></tr>
                             <tr><td class="main" id="main_ch4">main</td></tr>
                             <tr><td></td></tr>
+                        </table>
+                        <table>
                             <tr><td id="title">CH 4</td></tr>
                             <tr>
                                 <td class="slider">
@@ -125,28 +133,35 @@
                                                 
                         <table>
                             <tr>
-                                <td>aux1</td>
-                                <td>pfl</td>
+                                <td id="txt">AUX1</td>
+                                <td class="aux" id="aux1_global"></td>
+                                <td class="btn_all" id="pfl_global">PFL</td>
                             </tr>
                             <tr>
-                                <td>aux2</td>
-                                <td>main</td>
+                                <td id="txt">AUX2</td>
+                                <td class="aux" id="aux2_global"></td>
+                                <td class="btn_all" id="main_global">MAIN</td>
                             </tr>
                             <tr>
-                                <td>pfl</td>
+                                <td id="txt">PFL</td>
+                                <td class="pfl" id="pfl_global"></td>
+                                <td class="btn_all" id="stop">STOP</td>
                             </tr>
                             <tr>
                                 <td>barras</td>
                                 <td>barras</td>
-                                <td>aux1</td>
+                                <td class="btn_all" id="btn_aux1_global">AUX 1</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>aux2</td>
+                                <td></td>
+                                <td class="btn_all" id="btn_aux2_global">AUX 2</td>
                             </tr>
+                        </table>
+                        <table>
                             <tr>
-                                <td>mute</td>
-                                <td>mute</td>
+                                <td class="mute" id="mute_left">mute</td>
+                                <td class="mute" id="mute_right">mute</td>
                             </tr>
                             <tr>
                                 <td class="slider">
