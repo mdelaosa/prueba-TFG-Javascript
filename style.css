@@ -15,16 +15,12 @@ body{
     padding: 20px;
 }
 
-.default, th{
+.default{
   border: solid 1px black;
 }
 
-th#canal_izq{
-  border-right: none;
-}
-
-th#canal_drcha{
-  border-left: none;
+th{
+  border-right: solid 1px black;
 }
 
 td{
