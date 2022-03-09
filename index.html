@@ -9,28 +9,28 @@
     </head>
     <body>
         <div id="base">
-            <table class="default" border="1">
+            <table class="default">
                 <tr>
                     <th id="canal_1">
-                        <table align="center">
+                        <table>
                                 <tr><td class="load" id="load_ch1">load</td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">GAIN</td></tr>
                                 <tr><td class="potenciometro" id="gain_ch1">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_gain1">0</p>
+                                    <p id="value_ch1_gain">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">AUX 1</td></tr>
                                 <tr><td class="potenciometro" id="aux1_ch1">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_aux1">0</p>
+                                    <p id="value_ch1_aux1">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">AUX 2</td></tr>
                                 <tr><td class="potenciometro" id="aux2_ch1">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_aux2">0</p>
+                                    <p id="value_ch1_aux2">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
                                 <tr><td class="pfl" id="pfl_ch1">PFL</td></tr>
@@ -45,7 +45,7 @@
                                 <tr>
                                     <td class="slider">
                                         <input type="range" id="slider_ch1" min="-24" max="3" value="-24">
-                                        <p id="value_slider1">-24</p>
+                                        <p id="value_ch1_slider">-24</p>
                                     </td>
                                 </tr>
                         </table>
@@ -56,13 +56,22 @@
                             <tr><td class="load" id="load_ch2">load</td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
-                            <tr><td class="gain" id="gain_ch2"></td></tr>
+                            <tr><td class="potenciometro" id="gain_ch2">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch2_gain">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 1</td></tr>
-                            <tr><td class="aux" id="aux1_ch2"></td></tr>
+                            <tr><td class="potenciometro" id="aux1_ch2">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch2_aux1">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 2</td></tr>
-                            <tr><td class="aux" id="aux2_ch2"></td></tr>
+                            <tr><td class="potenciometro" id="aux2_ch2">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch2_aux2">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td class="pfl" id="pfl_ch2">PFL</td></tr>
                             <tr><td></td></tr>
@@ -75,7 +84,8 @@
                             <tr><td id="title">CH 2</td></tr>
                             <tr>
                                 <td class="slider">
-                                    <input type="range" id="slider_ch2" min="-20" max="50" value="0">
+                                    <input type="range" id="slider_ch2" min="-24" max="3" value="-24">
+                                    <p id="value_ch2_slider">-24</p>
                                 </td>
                             </tr>
                     </table>
@@ -85,13 +95,22 @@
                             <tr><td class="load" id="load_ch3">load</td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
-                            <tr><td class="gain" id="gain_ch3"></td></tr>
+                            <tr><td class="potenciometro" id="gain_ch3">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch3_gain">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 1</td></tr>
-                            <tr><td class="aux" id="aux1_ch3"></td></tr>
+                            <tr><td class="potenciometro" id="aux1_ch3">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch3_aux1">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 2</td></tr>
-                            <tr><td class="aux" id="aux2_ch3"></td></tr>
+                            <tr><td class="potenciometro" id="aux2_ch3">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch3_aux2">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td class="pfl" id="pfl_ch3">PFL</td></tr>
                             <tr><td></td></tr>
@@ -104,7 +123,8 @@
                             <tr><td id="title">CH 3</td></tr>
                             <tr>
                                 <td class="slider">
-                                    <input type="range" id="slider_ch3" min="-20" max="50" value="0">
+                                    <input type="range" id="slider_ch3" min="-24" max="3" value="-24">
+                                    <p id="value_ch3_slider">-24</p>
                                 </td>
                             </tr>
                     </table>
@@ -114,13 +134,22 @@
                             <tr><td class="load" id="load_ch4">load</td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
-                            <tr><td class="gain" id="gain_ch4"></td></tr>
+                            <tr><td class="potenciometro" id="gain_ch4">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch4_gain">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 1</td></tr>
-                            <tr><td class="aux" id="aux1_ch4"></td></tr>
+                            <tr><td class="potenciometro" id="aux1_ch4">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch4_aux1">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">AUX 2</td></tr>
-                            <tr><td class="aux" id="aux2_ch4"></td></tr>
+                            <tr><td class="potenciometro" id="aux2_ch4">
+                                <input type="range" min="0" max="15" value="0">
+                                <p id="value_ch4_aux2">0</p>
+                            </td></tr>
                             <tr><td></td></tr>
                             <tr><td class="pfl" id="pfl_ch4">PFL</td></tr>
                             <tr><td></td></tr>
@@ -133,56 +162,76 @@
                             <tr><td id="title">CH 4</td></tr>
                             <tr>
                                 <td class="slider">
-                                    <input type="range" id="slider_ch4" min="-20" max="50" value="0">
+                                    <input type="range" id="slider_ch4" min="-24" max="3" value="-24">
+                                    <p id="value_ch4_slider">-24</p>
                                 </td>
                             </tr>
                     </table>
                     </th>
-                    <th id="canales_id">
-                                                
-                        <table>
-                            <tr>
-                                <td id="txt">AUX1</td>
-                                <td class="aux" id="aux1_global"></td>
-                                <td class="btn_all" id="pfl_global">PFL</td>
-                            </tr>
-                            <tr>
-                                <td id="txt">AUX2</td>
-                                <td class="aux" id="aux2_global"></td>
-                                <td class="btn_all" id="main_global">MAIN</td>
-                            </tr>
-                            <tr>
-                                <td id="txt">PFL</td>
-                                <td class="pfl" id="pfl_global"></td>
-                                <td class="btn_all" id="stop">STOP</td>
-                            </tr>
-                            <tr>
-                                <td>barras</td>
-                                <td>barras</td>
-                                <td class="btn_all" id="btn_aux1_global">AUX 1</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="btn_all" id="btn_aux2_global">AUX 2</td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <td class="mute" id="mute_left">mute</td>
-                                <td class="mute" id="mute_right">mute</td>
-                            </tr>
-                            <tr>
-                                <td class="slider">
-                                    <input type="range" id="slider_left" min="-20" max="50" value="0">
-                                </td>
-                                <td class="slider">
-                                    <input type="range" id="slider_right" min="-20" max="50" value="0">
-                                </td>
-                            </tr>
-                        </table>
 
-                    </th>
+                        <td id="canal_izq">
+                            <table>
+                                <tr><td id="txt">Aux1</td></tr>
+                                <tr><td class="potenciometro" id="gain_ch4">
+                                    <input type="range" min="0" max="15" value="0">
+                                    <p id="value_ch4_gain">0</p>
+                                </td></tr>
+                                <tr><td></td></tr>
+                                <tr><td id="txt">AUX 2</td></tr>
+                                <tr><td class="potenciometro" id="aux1_ch4">
+                                    <input type="range" min="0" max="15" value="0">
+                                    <p id="value_ch4_aux1">0</p>
+                                </td></tr>
+                                <tr><td></td></tr>
+                                <tr><td id="txt">PFL</td></tr>
+                                <tr><td class="potenciometro" id="aux2_ch4">
+                                    <input type="range" min="0" max="15" value="0">
+                                    <p id="value_ch4_aux2">0</p>
+                                </td></tr>
+                                <tr><td>barras</td></tr>
+                                <tr><td>barras</td></tr>
+                            </table>
+                            <table>
+                                <td class="mute" id="mute_left">mute</td>
+                                <tr><td id="title">L</td></tr>
+                                <tr>
+                                    <td class="slider">
+                                        <input type="range" id="slider_ch4" min="-24" max="3" value="-24">
+                                        <p id="value_ch4_slider">-24</p>
+                                    </td>
+                                </tr>
+                        </table>
+                        </td>
+                        <td id="canal_drcha">
+                            <table>
+                                <tr>
+                                    <td class="btn_all" id="pfl_global">PFL</td>
+                                </tr>
+                                <tr>
+                                    <td class="btn_all" id="main_global">MAIN</td>
+                                </tr>
+                                <tr>
+                                    <td class="btn_all" id="stop">STOP</td>
+                                </tr>
+                                <tr>
+                                    <td class="btn_all" id="aux1_global">AUX1</td>
+                                </tr>
+                                <tr>
+                                    <td class="btn_all" id="aux2_global">AUX2</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <td class="mute" id="mute_right">mute</td>
+                                <tr><td id="title">R</td></tr>
+                                <tr>
+                                    <td class="slider">
+                                        <input type="range" id="slider_ch4" min="-24" max="3" value="-24">
+                                        <p id="value_ch4_slider">-24</p>
+                                    </td>
+                                </tr>
+                        </table>
+                        </td>
+                    
                 </tr>
             </table>
             

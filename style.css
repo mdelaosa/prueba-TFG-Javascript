@@ -15,10 +15,16 @@ body{
     padding: 20px;
 }
 
-th{
-  height: 800px;
+.default, th{
   border: solid 1px black;
-  text-align:center;
+}
+
+th#canal_izq{
+  border-right: none;
+}
+
+th#canal_drcha{
+  border-left: none;
 }
 
 td{
@@ -30,7 +36,12 @@ td{
   margin: auto;
   text-align: center;
   width: 60px;
+  height: 800px;
+  text-align:center;
 }
+
+#canal_izq{}
+#canal_drcha{}
 
 #canales_id{
   margin: auto;
