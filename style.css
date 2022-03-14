@@ -21,6 +21,7 @@ body{
 
 th{
   border-right: solid 1px black;
+  padding-right: 1px;
 }
 
 td{
@@ -36,19 +37,22 @@ td{
   text-align:center;
 }
 
-#canal_izq{}
-#canal_drcha{}
-
 #canales_id{
   margin: auto;
   text-align: center;
   width: 120px;
 }
 
-.load, .pfl, .mute, .main{
+.load, .pfl, .mute, .main, .btn_all{
   padding: auto;
-  height: 25px;
+  height: 35px;
+  width: 130px;
   border: solid 1px black;
+  background-color: rgba(170, 255, 255, 0.308);
+}
+
+.load:hover, .load:hover, .pfl:hover, .mute:hover, .main:hover, .btn_all:hover{
+  background-color: beige;
 }
 
 .btn_all{
