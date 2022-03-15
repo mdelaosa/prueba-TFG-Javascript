@@ -43,7 +43,7 @@ td{
   width: 120px;
 }
 
-.load, .pfl, .mute, .main, .btn_all{
+.btn{
   padding: auto;
   height: 35px;
   width: 130px;
@@ -51,7 +51,7 @@ td{
   background-color: rgba(170, 255, 255, 0.308);
 }
 
-.load:hover, .load:hover, .pfl:hover, .mute:hover, .main:hover, .btn_all:hover{
+.btn:hover{
   background-color: beige;
 }
 

@@ -13,7 +13,7 @@
                 <tr>
                     <th id="canal_1">
                         <table>
-                                <tr><td><input type="button" class="load" id="load_ch1" value="LOAD"></td></tr>
+                                <tr><td><input type="button" class="btn" id="load_ch1" value="LOAD"></td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">GAIN</td></tr>
                                 <tr><td class="potenciometro" id="gain_ch1">
@@ -33,11 +33,11 @@
                                     <p id="value_ch1_aux2">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
-                                <tr><td><input type="button" class="pfl" id="pfl_ch1" value="PFL"></td></tr>
+                                <tr><td><input type="button" class="btn" id="pfl_ch1" value="PFL"></td></tr>
                                 <tr><td></td></tr>
-                                <tr><td><input type="button" class="main" id="main_ch1" value="MAIN"></td></tr>
+                                <tr><td><input type="button" class="btn" id="main_ch1" value="MAIN"></td></tr>
                                 <tr><td></td></tr>
-                                <tr><td><input type="button" class="mute" id="mute_ch1" value="MUTE"></td></tr>
+                                <tr><td><input type="button" class="btn" id="mute_ch1" value="MUTE"></td></tr>
                                 <tr><td></td></tr>
                             </table>
                             <table>
@@ -53,7 +53,7 @@
                     </th>
                     <th id="canal_2">
                         <table>
-                            <tr><td><input type="button" class="load" id="load_ch2" value="LOAD"></td></tr>
+                            <tr><td><input type="button" class="btn" id="load_ch2" value="LOAD"></td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
                             <tr><td class="potenciometro" id="gain_ch2">
@@ -73,11 +73,11 @@
                                 <p id="value_ch2_aux2">0</p>
                             </td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="pfl" id="pfl_ch2">PFL</td></tr>
+                            <tr><td><input type="button" class="btn" id="pfl_ch2" value="PFL"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="mute" id="mute_ch2">mute</td></tr>
+                            <tr><td><input type="button" class="btn" id="main_ch2" value="MAIN"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="main" id="main_ch2">main</td></tr>
+                            <tr><td><input type="button" class="btn" id="mute_ch2" value="MUTE"></td></tr>
                             <tr><td></td></tr>
                         </table>
                         <table>
@@ -92,7 +92,7 @@
                     </th>
                     <th id="canal_3">
                         <table>
-                            <tr><td><input type="button" class="load" id="load_ch3" value="LOAD"></td></tr>
+                            <tr><td><input type="button" class="btn" id="load_ch3" value="LOAD"></td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
                             <tr><td class="potenciometro" id="gain_ch3">
@@ -112,11 +112,11 @@
                                 <p id="value_ch3_aux2">0</p>
                             </td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="pfl" id="pfl_ch3">PFL</td></tr>
+                            <tr><td><input type="button" class="btn" id="pfl_ch3" value="PFL"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="mute" id="mute_ch3">mute</td></tr>
+                            <tr><td><input type="button" class="btn" id="main_ch3" value="MAIN"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="main" id="main_ch3">main</td></tr>
+                            <tr><td><input type="button" class="btn" id="mute_ch3" value="MUTE"></td></tr>
                             <tr><td></td></tr>
                         </table>
                         <table>
@@ -131,7 +131,7 @@
                     </th>
                     <th id="canal_4">
                         <table>
-                            <tr><td><input type="button" class="load" id="load_ch4" value="LOAD"></td></tr>
+                            <tr><td><input type="button" class="btn" id="load_ch4" value="LOAD"></td></tr>
                             <tr><td></td></tr>
                             <tr><td id="txt">GAIN</td></tr>
                             <tr><td class="potenciometro" id="gain_ch4">
@@ -151,11 +151,11 @@
                                 <p id="value_ch4_aux2">0</p>
                             </td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="pfl" id="pfl_ch4">PFL</td></tr>
+                            <tr><td><input type="button" class="btn" id="pfl_ch4" value="PFL"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="mute" id="mute_ch4">mute</td></tr>
+                            <tr><td><input type="button" class="btn" id="main_ch4" value="MAIN"></td></tr>
                             <tr><td></td></tr>
-                            <tr><td class="main" id="main_ch4">main</td></tr>
+                            <tr><td><input type="button" class="btn" id="mute_ch4" value="MUTE"></td></tr>
                             <tr><td></td></tr>
                         </table>
                         <table>
@@ -171,61 +171,61 @@
 
                         <td id="canal_izq">
                             <table>
-                                <tr><td id="txt">Aux1</td></tr>
-                                <tr><td class="potenciometro" id="gain_ch4">
+                                <tr><td id="txt">AUX 1</td></tr>
+                                <tr><td class="potenciometro" id="gain_global">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_ch4_gain">0</p>
+                                    <p id="value_global_gain">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">AUX 2</td></tr>
-                                <tr><td class="potenciometro" id="aux1_ch4">
+                                <tr><td class="potenciometro" id="aux1_global">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_ch4_aux1">0</p>
+                                    <p id="value_global_aux1">0</p>
                                 </td></tr>
                                 <tr><td></td></tr>
                                 <tr><td id="txt">PFL</td></tr>
-                                <tr><td class="potenciometro" id="aux2_ch4">
+                                <tr><td class="potenciometro" id="aux2_global">
                                     <input type="range" min="0" max="15" value="0">
-                                    <p id="value_ch4_aux2">0</p>
+                                    <p id="value_global_aux2">0</p>
                                 </td></tr>
                                 <tr><td>barras</td></tr>
                                 <tr><td>barras</td></tr>
+                                <tr><td></td></tr>
                             </table>
                             <table>
-                                <td class="mute" id="mute_left">mute</td>
+                                <tr><td><input type="button" class="btn" id="mute_left" value="MUTE"></td></tr>
                                 <tr><td id="title">L</td></tr>
                                 <tr>
                                     <td class="slider">
-                                        <input type="range" id="slider_ch4" min="-24" max="3" value="-24">
-                                        <p id="value_ch4_slider">-24</p>
+                                        <input type="range" id="slider_left" min="-24" max="3" value="-24">
+                                        <p id="value_left_slider">-24</p>
                                     </td>
                                 </tr>
                         </table>
                         </td>
                         <td id="canal_drcha">
                             <table>
-                                <tr>
-                                    <td class="btn_all" id="pfl_global">PFL</td>
-                                <tr>
-                                    <td class="btn_all" id="main_global">MAIN</td>
-                                </tr>
-                                <tr>
-                                    <td class="btn_all" id="stop">STOP</td>
-                                </tr>
-                                <tr>
-                                    <td class="btn_all" id="aux1_global">AUX1</td>
-                                </tr>
-                                <tr>
-                                    <td class="btn_all" id="aux2_global">AUX2</td>
-                                </tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="pfl_global" value="PFL"></td></tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="main_global" value="MAIN"></td></tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="stop_global" value="STOP"></td></tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="aux1_global" value="AUX 1"></td></tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="aux2_global" value="AUX 2"></td></tr>
+                                <tr><td></td></tr>
                             </table>
                             <table>
-                                <td class="mute" id="mute_right">mute</td>
+                                <tr><td></td></tr>
+                                <tr><td></td></tr>
+                                <tr><td><input type="button" class="btn" id="mute_right" value="MUTE"></td></tr>
                                 <tr><td id="title">R</td></tr>
                                 <tr>
                                     <td class="slider">
-                                        <input type="range" id="slider_ch4" min="-24" max="3" value="-24">
-                                        <p id="value_ch4_slider">-24</p>
+                                        <input type="range" id="slider_right" min="-24" max="3" value="-24">
+                                        <p id="value_right_slider">-24</p>
                                     </td>
                                 </tr>
                         </table>
