@@ -51,8 +51,19 @@ td{
   background-color: rgba(170, 255, 255, 0.308);
 }
 
+.play-stop{
+  padding: auto;
+  height: 35px;
+  width: 63px;
+  border: solid 1px black;
+  background-color: rgba(170, 255, 255, 0.308);
+}
+
 .btn:hover{
   background-color: beige;
+}
+.btn:active, .btn:focus, .play-stop:active, .play-stop:focus {
+  background-color: red;
 }
 
 .btn_all{
