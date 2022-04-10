@@ -48,7 +48,7 @@ td{
   height: 35px;
   width: 130px;
   border: solid 1px black;
-  background-color: rgba(170, 255, 255, 0.308);
+  background-color: #aaaaff;
 }
 
 .play-stop{
@@ -56,7 +56,7 @@ td{
   height: 35px;
   width: 63px;
   border: solid 1px black;
-  background-color: rgba(170, 255, 255, 0.308);
+  background-color: #aaaaff;
 }
 
 .btn:hover{

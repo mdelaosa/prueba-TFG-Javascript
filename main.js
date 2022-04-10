@@ -44,7 +44,9 @@ stop_ch1.addEventListener("click", function (evento) {
 function mute1() {
     if (music1.muted == false) {
         music1.muted = true;
+        document.getElementById("mute_ch1").style.backgroundColor= "white";
     }else{
         music1.muted = false;
+        document.getElementById("mute_ch1").style.backgroundColor= "#aaaaff";
     }
 }
