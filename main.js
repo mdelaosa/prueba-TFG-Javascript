@@ -41,3 +41,10 @@ stop_ch1.addEventListener("click", function (evento) {
     music1.pause();
     music1.currentTime = 0;
 });
+function mute1() {
+    if (music1.muted == false) {
+        music1.muted = true;
+    }else{
+        music1.muted = false;
+    }
+}
