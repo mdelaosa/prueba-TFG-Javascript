@@ -63,7 +63,7 @@ td{
   background-color: beige;
 }
 .btn:active, .btn:focus, .play-stop:active, .play-stop:focus {
-  background-color: red;
+  background-color: white;
 }
 
 .btn_all{
