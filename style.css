@@ -1,6 +1,6 @@
 body{
     border: none;
-    background-color: #448e97fb;
+    background-color: #252727fb;
 }
 
 #base{
@@ -59,7 +59,7 @@ td{
   background-color: #aaaaff;
 }
 
-.btn:hover{
+.btn:hover, .play-stop:hover{
   background-color: beige;
 }
 .btn:active, .btn:focus, .play-stop:active, .play-stop:focus {
