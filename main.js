@@ -13,18 +13,31 @@ const slider_ch1 = document.getElementById('slider_ch1');
 
 const music1 = new Audio('Guitar.mp3');
 
+// CANAL 1
+    // Play CH1
 play_ch1.addEventListener("click", function (evento) {
-	// Aquí todo el código que se ejecuta cuando se da click al botón
-	// El evento del click
+	    // Cuando se hace click en el botón "play" comienza la música
     music1.play();
     music1.loop = true;
 });
+    // Stop CH1
 stop_ch1.addEventListener("click", function (evento) {
-	// Aquí todo el código que se ejecuta cuando se da click al botón
-	// El evento del click
+	    // Cuando se hace click en el botón "stop" para la música
     music1.pause();
     music1.currentTime = 0;
 });
+    // Gain CH1
+/*const analyserNode = new AnalyserNode(audioCtx, {
+    fftSize: 2048,
+    maxDecibels: -25,
+    minDecibels: -60,
+    smoothingTimeConstant: 0.5,
+});*/
+    // Aux1 CH1
+    // Aux2 CH1
+    // PFL CH1
+    // Main CH1
+    // Mute CH1
 function mute1() {
     if (music1.muted == false) {
         music1.muted = true;
