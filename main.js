@@ -36,7 +36,7 @@ source.connect(setGain1);
 setGain1.connect(audioCtx.destination);
 */
 
-const AudioContext = window.AudioContext || window.webkitAudioContext;
+/*const AudioContext = window.AudioContext || window.webkitAudioContext;
 
 const audioContext = new AudioContext();
 
@@ -47,10 +47,23 @@ const gainNode = audioContext.createGain();
 track.connect(gainNode).connect(audioContext.destination);
 
 gain_ch1.addEventListener('input', function() {
-  gainNode.gain.value = this.value;
-  console.log(gainNode.gain.value);
+    gainNode.gain.value = this.value;
+    console.log(gainNode.gain.value);
 }, false);
 
+*/
+
+/*let volume = document.querySelector("#gain_ch1");
+volume.addEventListener("change", function(e) {
+music1.volume = e.currentTarget.value / 100;
+})*/
+
+function setGain1(e) {
+    var volume1 = e.target.value;
+    console.log(volume1);
+    music1.volume = volume1;
+}
+$('#gain_ch1').on('change', setGain1);
 
 
     // Aux1 CH1
@@ -87,25 +100,24 @@ function valores_slider1(){
             masterGain = context.createGainNode();
             masterGain.gain.value = 1;
             var compressor = new tuna.Compressor({
-                               threshold: -10,    //-100 to 0
-                               makeupGain: 1,     //0 and up
-                               attack: 1,         //0 to 1000
-                               release: 0,        //0 to 3000
-                               ratio: 10,          //1 to 20
-                               knee: 5,           //0 to 40
-                               automakeup: true,  //true/false
-                               bypass: 1
-                             });
-              $('#buss').change(function(){
-              if($(this).is(':checked')){
+                                threshold: -10,    //-100 to 0
+                                makeupGain: 1,     //0 and up
+                                attack: 1,         //0 to 1000
+                                release: 0,        //0 to 3000
+                                ratio: 10,          //1 to 20
+                                knee: 5,           //0 to 40
+                                automakeup: true,  //true/false
+                                bypass: 1
+                            });
+            $('#buss').change(function(){
+            if($(this).is(':checked')){
                 compressor.bypass = 0;
                 } else {
-                  compressor.bypass = 1;}
-          
-              });
+                compressor.bypass = 1;}
+            });
             masterGain.connect(compressor.input);
             compressor.connect(context.destination);
-          }
+        }
     */
     /*
         const analyserNode = new AnalyserNode(audioCtx, {
