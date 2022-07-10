@@ -29,35 +29,6 @@ stop_ch1.addEventListener("click", function (evento) {
     music1.currentTime = 0;
 });
     // Gain CH1
-
-/*
-var setGain1 = audioCtx.createGain();
-source.connect(setGain1);
-setGain1.connect(audioCtx.destination);
-*/
-
-/*const AudioContext = window.AudioContext || window.webkitAudioContext;
-
-const audioContext = new AudioContext();
-
-const track = audioContext.createMediaElementSource(music1);
-
-const gainNode = audioContext.createGain();
-
-track.connect(gainNode).connect(audioContext.destination);
-
-gain_ch1.addEventListener('input', function() {
-    gainNode.gain.value = this.value;
-    console.log(gainNode.gain.value);
-}, false);
-
-*/
-
-/*let volume = document.querySelector("#gain_ch1");
-volume.addEventListener("change", function(e) {
-music1.volume = e.currentTarget.value / 100;
-})*/
-
 function setGain1(e) {
     var volume1 = e.target.value;
     console.log(volume1);
