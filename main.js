@@ -13,7 +13,7 @@ const main_ch1 = document.getElementById('main_ch1');
 const slider_ch1 = document.getElementById('slider_ch1');
 
 const music1 = new Audio('Guitar.mp3');
-//var gain1;
+const gain1 = document.getElementById('gain1').value;
 
 // CANAL 1
     // Play CH1
@@ -30,11 +30,16 @@ stop_ch1.addEventListener("click", function (evento) {
 });
     // Gain CH1
 function setGain1(e) {
-    var volume1 = e.target.value;
-    console.log(volume1);
-    music1.volume = volume1;
+
+    var gainch1 = e.target.value;
+    console.log("Gain 1:" , gain1);
+    //music1.volume = parseFloat(gain1);
+    music1.volume = gainch1*gain1;
 }
 $('#gain_ch1').on('change', setGain1);
+$('#value_ch1_gain').on('change', setGain1*10);
+
+
 
 
     // Aux1 CH1
