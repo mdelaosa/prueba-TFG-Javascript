@@ -15,6 +15,9 @@ const slider_ch1 = document.getElementById('slider_ch1');
 const music1 = new Audio('Guitar.mp3');
 const gain1 = document.getElementById('gain1').value;
 
+const play_ch2 = document.getElementById('play_ch2');
+const stop_ch2 = document.getElementById('stop_ch2');
+
 // CANAL 1
     // Play CH1
 play_ch1.addEventListener("click", function (evento) {
@@ -104,3 +107,22 @@ function valores_slider1(){
         });
     */
 }
+
+// CANAL 1
+    // Play CH1
+    play_ch2.addEventListener("click", function (evento) {
+        var sound1 = new Howl({
+            src: ['https://github.com/mdelaosa/TFG/blob/2cc77238632eac450e741f3d3411bee40a0c7366/Guitar.mp3'],
+            volume: 1.0,
+            onend: function () {
+              alert('We finished with the setup!');
+            }
+          });
+          sound1.play()
+});
+    // Stop CH1
+stop_ch2.addEventListener("click", function (evento) {
+	    // Cuando se hace click en el botón "stop" para la música
+    music1.pause();
+    music1.currentTime = 0;
+});
